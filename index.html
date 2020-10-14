@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Hybrid Cloud</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link
+      rel="stylesheet"
+      href="plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <a
+            href="https://coderturtle.github.io/cloud-gremlin-hybrid-cloud-presentation/"
+          >
+            <img
+              src="images/cloud-gremlin-blk.png"
+              alt="gremlins"
+              style="
+                height: 180px;
+                margin: 0 auto 4rem auto;
+                background: transparent;
+              "
+              class="demo-logo"
+            />
+          </a>
+          <h3>Hybrid Cloud</h3>
+          <p>
+            <small>Derm Duncan</small>
+          </p>
+        </section>
+        <section>
+          <section>
+            <p>Multi Cloud (Core CSPs)</p>
+            <img
+              src="images/multi-cloud.png"
+              alt="architecture"
+              style="
+                height: 450px;
+                margin: 0 auto 4rem auto;
+                background: transparent;
+              "
+              class="demo-logo"
+            />
+            <p>
+              <small>
+                Deploying a multi-tenant application across multiple cloud platforms can be very challenging. But what designs exist for multi-cloud strategies?
+              </small>
+            </p>
+          </section>
+          <section>
+            <p>Incorporate Cloud Services in on-prem app</p>
+            <img
+              src="images/cloudification.png"
+              alt="multi cloud"
+              style="
+                height: 480px;
+                margin: 0 auto 4rem auto;
+                background: transparent;
+              "
+              class="demo-logo"
+            />
+          </section>
+          <section>
+            <p>Migrate different apps to different CSPs</p>
+            <img
+              src="images/multi-cloud-refactor.png"
+              alt="multi cloud refactor"
+              style="
+                height: 480px;
+                margin: 0 auto 4rem auto;
+                background: transparent;
+              "
+              class="demo-logo"
+            />
+          </section>
+          <section>
+            <p>Single app hosted on multiple CSPs</p>
+            <img
+              src="images/multi-cloud-failover.png"
+              alt="multi cloud failover"
+              style="
+                height: 480px;
+                margin: 0 auto 4rem auto;
+                background: transparent;
+              "
+              class="demo-logo"
+            />
+          </section>
+        </section>
+        <section>
+          <section>
+            <p>Hybrid Cloud</p>
+            <img
+              src="images/hybrid-cloud.png"
+              alt="hybrid cloud"
+              style="
+                height: 320px;
+                margin: 0 auto 4rem auto;
+                background: transparent;
+              "
+            />
+            <p>
+              <small>
+                <ol>
+                  <li>Environment Propogation</li>
+                  <li>Functional Distribution</li>
+                </ol>
+              </small>
+            </p>
+          </section>
+          <section>
+            <p>Tiered Hybrid</p>
+            <img
+              src="images/tiered-hybrid.svg"
+              alt="tiered hybrid"
+              style="
+                height: 300px;
+                margin: 0 auto 4rem auto;
+                background: transparent;
+              "
+            />
+            <p>
+              <small>
+                <ol>
+                  <li>Isolate & Migrate loosely coupled front-end apps to cloud</li>
+                  <li>Re-use existing backends on-premise as can be more complex with more complex dependencies</li>
+                  <li>Front-ends rapidly change & cloud simplofy setup of CI/CD pipelines</li>
+                  <li>unidirectional communication</li>
+                </ol>
+              </small>
+            </p>
+          </section>
+          <section>
+            <p>Analytics Hybrid</p>
+            <img
+              src="images/analytics-hybrid.svg"
+              alt="hybrid analytics"
+              style="
+                height: 275px;
+                margin: 0 auto 4rem auto;
+                background: transparent;
+              "
+            />
+            <p>
+              <small>
+                <ol>
+                  <li>Cost savings as analytic workloads can be bursty & process substantial data amounts</li>
+                  <li>Cloud Storage is better suited for building data lakes</li>
+                </ol>
+              </small>
+            </p>
+          </section>
+          <section>
+            <p>DR Hybrid</p>
+            <img
+              src="images/hybrid-dr.svg"
+              alt="DR Hybrid"
+              style="
+                height: 275px;
+                margin: 0 auto 4rem auto;
+                background: transparent;
+              "
+            />
+            <p>
+              <small>
+                <ol>
+                  <li>Use public cloud as a DR failover environment</li>
+                  <li>Not often used as hard to keep identical infrastructures on-prem and in public cloud</li>
+                </ol>
+              </small>
+            </p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <p>Hybrid Cloud Challenges</p>
+            <img
+              src="images/hybrid-cloud-challenges.png"
+              alt="challenges"
+              style="
+                height: 275px;
+                margin: 0 auto 4rem auto;
+                background: transparent;
+              "
+            />
+            <p>
+              <small>
+                <ol>
+                  <li>Complexity</li>
+                  <li>Compliance</li>
+                  <li>Security</li>
+                  <li>Governance</li>
+                  <li>Cost</li>
+                </ol>
+              </small>
+            </p>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
